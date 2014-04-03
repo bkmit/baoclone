@@ -835,7 +835,7 @@ static void ft60r_print_config (FILE *out, int verbose)
         fprintf (out, "# 4) Transmit frequency or +/- offset in MHz\n");
         fprintf (out, "# 5) Squelch tone for receive, or '-' to disable\n");
         fprintf (out, "# 6) Squelch tone for transmit, or '-' to disable\n");
-        fprintf (out, "# 7) Transmit power: High, Mid, Low\n");
+        fprintf (out, "# 7) Transmit power: High, Med, Low\n");
         fprintf (out, "# 8) Modulation: Wide, Narrow, AM\n");
         fprintf (out, "# 9) Scan mode: +, -, Only\n");
         fprintf (out, "# 10) List of banks 0..9, or '-' to disable\n");
@@ -879,7 +879,7 @@ static void ft60r_print_config (FILE *out, int verbose)
         fprintf (out, "# 3) Transmit frequency or +/- offset in MHz\n");
         fprintf (out, "# 4) Squelch tone for receive, or '-' to disable\n");
         fprintf (out, "# 5) Squelch tone for transmit, or '-' to disable\n");
-        fprintf (out, "# 6) Transmit power: High, Mid, Low\n");
+        fprintf (out, "# 6) Transmit power: High, Med, Low\n");
         fprintf (out, "# 7) Modulation: Wide, Narrow, AM\n");
         fprintf (out, "#\n");
     }
@@ -1119,7 +1119,7 @@ badtx:  fprintf (stderr, "Bad transmit frequency.\n");
 
     if (strcasecmp ("High", power_str) == 0) {
         power = 0;
-    } else if (strcasecmp ("Mid", power_str) == 0) {
+    } else if (strcasecmp ("Med", power_str) == 0) {
         power = 1;
     } else if (strcasecmp ("Low", power_str) == 0) {
         power = 2;
@@ -1209,7 +1209,7 @@ badtx:  fprintf (stderr, "Bad transmit frequency.\n");
 
     if (strcasecmp ("High", power_str) == 0) {
         power = 0;
-    } else if (strcasecmp ("Mid", power_str) == 0) {
+    } else if (strcasecmp ("Med", power_str) == 0) {
         power = 1;
     } else if (strcasecmp ("Low", power_str) == 0) {
         power = 2;
